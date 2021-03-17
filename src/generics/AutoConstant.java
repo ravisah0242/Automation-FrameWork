@@ -18,4 +18,7 @@ public interface AutoConstant
 	//String url="file:///E:/Tutorial%20Beigenar/QSpider%20Tutorial%20Lecture/Selenium%20By%20Jyoti%20Prakash/HTML%20%20CODE/SampleFramework.html";
 	String excel_path="./testdata/SampleFrameWorkData.xlsx";
 	String sheet_name="EmployeeDetails";
+	
+
+	
 }

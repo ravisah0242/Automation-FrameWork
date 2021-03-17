@@ -7,6 +7,8 @@ import pages.SampleFrameWorkPage;
 
 public class TestSampleFrameWork extends BaseTest
 {
+	
+	
 	@Test
 	public void submit() throws IOException
 	{
@@ -14,4 +16,9 @@ public class TestSampleFrameWork extends BaseTest
 		sample.submitDetaild();
 	}
 
+	@Test // (invocationCount=2,priority=2)
+	public void after()
+	{
+		System.out.println("67.	Can we develop more than one test methods in a single test class");
+	}
 }

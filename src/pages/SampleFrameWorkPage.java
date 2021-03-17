@@ -1,11 +1,13 @@
 package pages;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.PageFactoryFinder;
 import org.openqa.selenium.support.ui.Select;
 
 import generics.AutoConstant;
@@ -43,9 +45,13 @@ public class SampleFrameWorkPage extends BasePage implements AutoConstant
 	@FindBy(xpath="(//input[@type='text'])[5]")
 	private WebElement mobilenumbertextfaild;
 	
+	@FindBy(xpath="a")
+	private List<WebElement> sugetion;
+	
 	public SampleFrameWorkPage(WebDriver driver)
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this); // if We not used initElementsMethod();
+		
 	}
 	public void submitDetaild() throws IOException
 	{

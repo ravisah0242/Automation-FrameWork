@@ -19,6 +19,7 @@ public class BaseTest implements AutoConstant
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get(url);
+		
 	}
 	@AfterMethod
 	public void closeApp()
